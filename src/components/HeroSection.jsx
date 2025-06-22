@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import avatar from "@/assets/DaoDuyPhat-avatar.jpg";
+import avatar from "@/assets/DaoDuyPhat-Avatar.jpg";
 
 export const HeroSection = () => {
   return (
