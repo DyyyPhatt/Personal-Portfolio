@@ -36,7 +36,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="/src/assets/CV_DaoDuyPhat_Front-end_EN.pdf"
+                href="/CV_DaoDuyPhat_Front-end_EN.pdf"
                 className="flex items-center gap-2 px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 download
               >
