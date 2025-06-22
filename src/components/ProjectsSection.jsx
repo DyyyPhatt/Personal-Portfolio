@@ -6,7 +6,7 @@ const projects = [
     title: "PTTech ECommerce Website",
     description:
       "A full-stack eCommerce web application featuring a modern React-based front-end and a Java Spring Boot back-end. Supports dynamic product listings, user authentication, and MongoDB-based data storage.",
-    image: "/public/Projects/PTTech-Ecommerce-Website.png",
+    image: "/src/assets/Projects/PTTech-Ecommerce-Website.png",
     tags: ["React", "Java Spring Boot", "MongoDB"],
     demoUrl: "#",
     githubUrl: "https://github.com/DyyyPhatt/PTTech-Ecommerce-Website",
@@ -16,10 +16,10 @@ const projects = [
     title: "Personal Portfolio",
     description:
       "A responsive and interactive personal portfolio website built with React, Vite, and TailwindCSS. Showcases my skills, projects, and resume with a clean and animated UI.",
-    image: "/public/Projects/Personal-Portfolio.png",
+    image: "/src/assets/Projects/Personal-Portfolio.png",
     tags: ["React", "Vite", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://personal-portfolio-five-swart-40.vercel.app/",
+    githubUrl: "https://github.com/DyyyPhatt/Personal-Portfolio",
   },
 ];
 
