@@ -30,7 +30,10 @@ export const Footer = () => {
         </div>
 
         <div className="flex space-x-6 text-muted-foreground">
-          <SocialIcon href="#" icon={<Linkedin size={20} />} />
+          <SocialIcon
+            href="https://www.linkedin.com/in/dduyphat1810"
+            icon={<Linkedin size={20} />}
+          />
           <SocialIcon
             href="https://www.facebook.com/profile.php?id=100028390549233"
             icon={<Facebook size={20} />}
