@@ -12,8 +12,10 @@ import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 export const ContactSection = () => {
+  const { t } = useTranslation();
   const form = useRef(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -23,7 +25,7 @@ export const ContactSection = () => {
     if (!form.current) return;
 
     setIsLoading(true);
-    const toastId = toast.loading("Sending your message...");
+    const toastId = toast.loading(t("contact.sending"));
 
     emailjs
       .sendForm(
@@ -33,22 +35,12 @@ export const ContactSection = () => {
         "FOmrpyrMtSbndc0AT"
       )
       .then(() => {
-        toast.success(
-          "Thank you! Your message has been sent. I’ll get back to you soon. 🙌",
-          {
-            id: toastId,
-          }
-        );
+        toast.success(t("contact.success"), { id: toastId });
         form.current?.reset();
         setIsLoading(false);
       })
       .catch(() => {
-        toast.error(
-          "Sorry! Something went wrong while sending your message. Please try again later. 😥",
-          {
-            id: toastId,
-          }
-        );
+        toast.error(t("contact.error"), { id: toastId });
         setIsLoading(false);
       });
   };
@@ -57,38 +49,41 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
+          {t("contact.title1")}{" "}
+          <span className="text-primary">{t("contact.title2")}</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
+          {t("contact.description")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Info */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("contact.infoTitle")}
+            </h3>
             <div className="space-y-6 justify-center">
               <ContactInfo
                 icon={<Mail />}
-                label="Email"
+                label={t("contact.email")}
                 value="daoduyphat1810@gmail.com"
                 link="mailto:daoduyphat1810@gmail.com"
               />
               <ContactInfo
                 icon={<Phone />}
-                label="Phone"
+                label={t("contact.phone")}
                 value="+84 (865) 577-718"
                 link="tel:+84865577718"
               />
               <ContactInfo
                 icon={<MapPin />}
-                label="Location"
-                value="Tan Binh District, HCM City, Vietnam"
+                label={t("contact.location")}
+                value={t("contact.address")}
               />
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4">Connect With Me</h4>
+              <h4 className="font-medium mb-4">{t("contact.connect")}</h4>
               <div className="flex space-x-4 justify-center">
                 <SocialLink
                   href="https://www.linkedin.com/in/dduyphat1810"
@@ -112,26 +107,28 @@ export const ContactSection = () => {
 
           {/* Form */}
           <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("contact.formTitle")}
+            </h3>
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <InputField
                 id="name"
                 type="text"
-                label="Your Name"
-                placeholder="Duy Phat Dao..."
+                label={t("contact.form.name")}
+                placeholder={t("contact.form.namePlaceholder")}
                 required
               />
               <InputField
                 id="email"
                 type="email"
-                label="Your Email"
-                placeholder="daoduyphat1810@gmail.com"
+                label={t("contact.form.email")}
+                placeholder={t("contact.form.emailPlaceholder")}
                 required
               />
               <TextAreaField
                 id="message"
-                label="Your Message"
-                placeholder="Hello, I'd like to talk about..."
+                label={t("contact.form.message")}
+                placeholder={t("contact.form.messagePlaceholder")}
                 required
               />
               <button
@@ -162,12 +159,11 @@ export const ContactSection = () => {
                         d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                       ></path>
                     </svg>
-                    Sending...
+                    {t("contact.sending")}
                   </>
                 ) : (
                   <>
-                    Send Message
-                    <Send size={16} />
+                    {t("contact.send")} <Send size={16} />
                   </>
                 )}
               </button>
@@ -179,7 +175,6 @@ export const ContactSection = () => {
   );
 };
 
-// Sub-components for clarity
 const ContactInfo = ({ icon, label, value, link }) => (
   <div className="flex items-start space-x-4">
     <div className="p-3 rounded-full bg-primary/10 text-primary">{icon}</div>
@@ -203,6 +198,7 @@ const SocialLink = ({ href, icon }) => (
   <a
     href={href}
     target="_blank"
+    rel="noopener noreferrer"
     className="text-foreground/80 hover:text-primary"
   >
     {icon}
@@ -211,7 +207,7 @@ const SocialLink = ({ href, icon }) => (
 
 const InputField = ({ id, type, label, placeholder, required }) => (
   <div>
-    <label htmlFor={id} className="block text-sm font-medium mb-2">
+    <label htmlFor={id} className="block text-sm text-left font-medium mb-2">
       {label}
     </label>
     <input
@@ -227,7 +223,7 @@ const InputField = ({ id, type, label, placeholder, required }) => (
 
 const TextAreaField = ({ id, label, placeholder, required }) => (
   <div>
-    <label htmlFor={id} className="block text-sm font-medium mb-2">
+    <label htmlFor={id} className="block text-sm text-left font-medium mb-2">
       {label}
     </label>
     <textarea

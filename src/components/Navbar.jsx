@@ -2,27 +2,34 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { useTranslation } from "react-i18next";
+import { LanguageDropdown } from "./LanguageDropdown";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { key: "home", href: "#hero" },
+  { key: "about", href: "#about" },
+  { key: "skills", href: "#skills" },
+  { key: "projects", href: "#projects" },
+  { key: "contact", href: "#contact" },
 ];
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const { i18n } = useTranslation();
+  const { t } = useTranslation();
+  const currentLang = i18n.language || "en";
+
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <nav
       className={cn(
@@ -42,18 +49,24 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 items-center">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
-              {item.name}
+              {t(`nav.${item.key}`)}
             </a>
           ))}
 
           <ThemeToggle />
+
+          {/* Language toggle button */}
+          <LanguageDropdown
+            currentLang={currentLang}
+            toggleLanguage={(lng) => i18n.changeLanguage(lng)}
+          />
         </div>
 
         {/* Mobile nav */}
@@ -73,19 +86,24 @@ export const Navbar = () => {
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col space-y-8 text-xl items-center">
             {navItems.map((item, key) => (
               <a
                 key={key}
                 href={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
               >
-                {item.name}
+                {t(`nav.${item.key}`)}
               </a>
             ))}
 
             <ThemeToggle />
+
+            {/* Language toggle button mobile */}
+            <LanguageDropdown
+              currentLang={currentLang}
+              toggleLanguage={(lng) => i18n.changeLanguage(lng)}
+            />
           </div>
         </div>
       </div>

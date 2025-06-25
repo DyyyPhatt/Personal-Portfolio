@@ -1,14 +1,20 @@
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import { BsTiktok } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="py-12 px-6 bg-card border-t border-border mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
       {/* Left: Copyright */}
-      <p className="text-sm text-muted-foreground text-center md:text-left">
-        &copy; {new Date().getFullYear()} Dao Duy Phat. All rights reserved.
-        Crafted with ❤️ and passion. Thank you for visiting my portfolio.
-      </p>
+      <p
+        className="text-sm text-muted-foreground text-center md:text-left"
+        dangerouslySetInnerHTML={{
+          __html: t("footer.copyright", { year: currentYear }),
+        }}
+      />
 
       {/* Right: Contact & Social */}
       <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
@@ -18,14 +24,14 @@ export const Footer = () => {
             className="hover:text-primary transition-colors flex items-center space-x-1"
           >
             <Mail size={16} />
-            <span>Email</span>
+            <span>{t("footer.email")}</span>
           </a>
           <a
             href="tel:+84865577718"
             className="hover:text-primary transition-colors flex items-center space-x-1"
           >
             <Phone size={16} />
-            <span>+84 865 577 718</span>
+            <span>{t("footer.phone")}</span>
           </a>
         </div>
 

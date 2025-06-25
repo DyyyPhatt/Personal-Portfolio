@@ -1,39 +1,32 @@
 import { Briefcase, Code, User, GraduationCap, FileText } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary">Me</span>
+          <Trans
+            i18nKey="about.title"
+            components={{ 1: <span className="text-primary" /> }}
+          />
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Hi, I'm Duy Phat — a Front-End Developer in the making.
+              {t("about.intro_heading")}
             </h3>
-            <p className="text-muted-foreground">
-              I'm a final-year Software Engineering student at Ho Chi Minh City
-              University of Technology and Education (HCMUTE), specializing in
-              Software Engineering.
-            </p>
-            <p className="text-muted-foreground">
-              Though I haven't yet worked in a corporate environment, I've
-              cultivated a solid foundation in front-end development through
-              academic coursework and personal side projects.
-            </p>
-            <p className="text-muted-foreground">
-              I enjoy building clean, responsive, and accessible interfaces
-              using tools like HTML, CSS, JavaScript, React, Tailwind CSS, and
-              Vite. I'm committed to continuous learning and passionate about
-              turning ideas into interactive experiences.
-            </p>
+            <p className="text-muted-foreground">{t("about.para_1")}</p>
+            <p className="text-muted-foreground">{t("about.para_2")}</p>
+            <p className="text-muted-foreground">{t("about.para_3")}</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center sm:justify-start">
               <a href="#contact" className="cosmic-button">
-                Get In Touch
+                {t("about.get_in_touch")}
               </a>
               <a
                 href="/CV_DaoDuyPhat_Front-end_EN.pdf"
@@ -41,7 +34,7 @@ export const AboutSection = () => {
                 download
               >
                 <FileText className="h-5 w-5" />
-                Download CV
+                {t("about.download_cv")}
               </a>
             </div>
           </div>
@@ -56,12 +49,10 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Front-End Development
+                    {t("about.frontend_title")}
                   </h4>
                   <p className="text-muted-foreground">
-                    Strong grasp of HTML, CSS, JavaScript, and React. Skilled in
-                    crafting responsive, modern interfaces using tools like
-                    Tailwind CSS and Vite.
+                    {t("about.frontend_desc")}
                   </p>
                 </div>
               </div>
@@ -74,11 +65,11 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Fundamentals</h4>
+                  <h4 className="font-semibold text-lg">
+                    {t("about.uiux_title")}
+                  </h4>
                   <p className="text-muted-foreground">
-                    Understanding user-centered design, wireframing, and layout
-                    structure. Applying design thinking to deliver better user
-                    experiences.
+                    {t("about.uiux_desc")}
                   </p>
                 </div>
               </div>
@@ -91,11 +82,11 @@ export const AboutSection = () => {
                   <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Academic Projects</h4>
+                  <h4 className="font-semibold text-lg">
+                    {t("about.academic_title")}
+                  </h4>
                   <p className="text-muted-foreground">
-                    Hands-on experience through team assignments and class
-                    projects. Practicing Agile methodologies and version control
-                    in collaborative settings.
+                    {t("about.academic_desc")}
                   </p>
                 </div>
               </div>

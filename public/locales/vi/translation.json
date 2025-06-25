@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "skills": "Kỹ Năng",
+    "projects": "Dự Án",
+    "contact": "Liên Hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name_primary": "Duy Phát",
+    "name_secondary": "Đào",
+    "description": "Tôi là một Front-End Developer xây dựng các giao diện web hiện đại, hiệu suất cao và đẹp mắt. Tôi tập trung vào việc tạo các UI đáp ứng và trải nghiệm người dùng mượt mà sử dụng các công nghệ web mới nhất.",
+    "view_work": "Xem Dự Án Của Tôi",
+    "scroll": "Cuộn xuống"
+  },
+  "about": {
+    "title": "About <1>Me</1>",
+    "intro_heading": "Xin chào, tôi là Duy Phát — một Front-End Developer đang trong hành trình phát triển.",
+    "para_1": "Tôi là sinh viên năm cuối ngành Kỹ thuật Phần mềm tại Đại học Sư phạm Kỹ thuật TP.HCM (HCMUTE).",
+    "para_2": "Dù chưa có kinh nghiệm làm việc tại doanh nghiệp, tôi đã xây dựng nền tảng vững chắc về phát triển front-end qua các môn học và dự án cá nhân.",
+    "para_3": "Tôi yêu thích việc xây dựng giao diện sạch, phản hồi tốt và dễ tiếp cận bằng các công cụ như HTML, CSS, JavaScript, React, Tailwind CSS và Vite. Tôi luôn nỗ lực học hỏi và đam mê biến ý tưởng thành trải nghiệm tương tác.",
+    "get_in_touch": "Liên hệ với tôi",
+    "download_cv": "Tải CV",
+
+    "frontend_title": "Phát triển Front-End",
+    "frontend_desc": "Thành thạo HTML, CSS, JavaScript và React. Kỹ năng xây dựng giao diện hiện đại, phản hồi tốt với Tailwind CSS và Vite.",
+
+    "uiux_title": "Kiến thức UI/UX",
+    "uiux_desc": "Hiểu về thiết kế lấy người dùng làm trung tâm, wireframing và bố cục giao diện. Áp dụng tư duy thiết kế để cải thiện trải nghiệm người dùng.",
+
+    "academic_title": "Dự án học tập",
+    "academic_desc": "Thực hành qua bài tập nhóm và dự án môn học. Áp dụng phương pháp Agile và quản lý mã nguồn trong môi trường cộng tác."
+  },
+  "projects": {
+    "title": "Featured <1>Projects</1>",
+    "description": "Dưới đây là một số dự án gần đây của tôi. Mỗi dự án đều được thiết kế cẩn thận với sự chú ý đến chi tiết, hiệu suất và trải nghiệm người dùng.",
+    "view_github": "Xem trên Github",
+    "items": [
+      {
+        "title": "Website Thương Mại Điện Tử PTTech",
+        "description": "Ứng dụng web thương mại điện tử full-stack với giao diện React hiện đại và backend Java Spring Boot. Hỗ trợ danh sách sản phẩm động, xác thực người dùng và lưu trữ dữ liệu bằng MongoDB."
+      },
+      {
+        "title": "Portfolio Cá Nhân",
+        "description": "Website portfolio cá nhân tương tác, responsive, xây dựng bằng React, Vite và TailwindCSS. Giới thiệu kỹ năng, dự án và CV với giao diện đẹp và mượt mà."
+      }
+    ]
+  },
+  "contact": {
+    "title1": "Get In",
+    "title2": "Touch",
+    "description": "Bạn có dự án hoặc muốn hợp tác? Đừng ngần ngại liên hệ với tôi.",
+    "infoTitle": "Thông tin liên hệ",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "location": "Địa chỉ",
+    "address": "Quận Tân Bình, TP. Hồ Chí Minh, Việt Nam",
+    "connect": "Kết nối với tôi",
+    "formTitle": "Gửi tin nhắn",
+    "form": {
+      "name": "Tên của bạn",
+      "namePlaceholder": "Đào Duy Phát...",
+      "email": "Email của bạn",
+      "emailPlaceholder": "daoduyphat1810@gmail.com",
+      "message": "Nội dung",
+      "messagePlaceholder": "Xin chào, tôi muốn trao đổi về..."
+    },
+    "send": "Gửi tin nhắn",
+    "sending": "Đang gửi tin nhắn...",
+    "success": "Cảm ơn bạn! Tin nhắn đã được gửi. Tôi sẽ phản hồi sớm nhất. 🙌",
+    "error": "Xin lỗi! Gửi tin nhắn thất bại. Vui lòng thử lại sau. 😥"
+  },
+  "footer": {
+    "copyright": "&copy; {{year}} Dao Duy Phat. Bản quyền thuộc về tôi. Được làm bằng ❤️ và đam mê. Cảm ơn bạn đã ghé thăm portfolio của tôi.",
+    "email": "daoduyphat1810@gmail.com",
+    "phone": "+84 865 577 718"
+  }
+}

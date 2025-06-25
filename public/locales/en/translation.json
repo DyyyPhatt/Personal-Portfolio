@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name_primary": "Duy Phat",
+    "name_secondary": "Dao",
+    "description": "I'm a Front-End Developer crafting modern, performant, and beautiful web interfaces. I focus on building responsive UIs and seamless user experiences using the latest web technologies.",
+    "view_work": "View My Work",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About <1>Me</1>",
+    "intro_heading": "Hi, I'm Duy Phat — a Front-End Developer in the making.",
+    "para_1": "I'm a final-year Software Engineering student at Ho Chi Minh City University of Technology and Education (HCMUTE), specializing in Software Engineering.",
+    "para_2": "Though I haven't yet worked in a corporate environment, I've cultivated a solid foundation in front-end development through academic coursework and personal side projects.",
+    "para_3": "I enjoy building clean, responsive, and accessible interfaces using tools like HTML, CSS, JavaScript, React, Tailwind CSS, and Vite. I'm committed to continuous learning and passionate about turning ideas into interactive experiences.",
+    "get_in_touch": "Get In Touch",
+    "download_cv": "Download CV",
+
+    "frontend_title": "Front-End Development",
+    "frontend_desc": "Strong grasp of HTML, CSS, JavaScript, and React. Skilled in crafting responsive, modern interfaces using tools like Tailwind CSS and Vite.",
+
+    "uiux_title": "UI/UX Fundamentals",
+    "uiux_desc": "Understanding user-centered design, wireframing, and layout structure. Applying design thinking to deliver better user experiences.",
+
+    "academic_title": "Academic Projects",
+    "academic_desc": "Hands-on experience through team assignments and class projects. Practicing Agile methodologies and version control in collaborative settings."
+  },
+  "projects": {
+    "title": "Featured <1>Projects</1>",
+    "description": "Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.",
+    "view_github": "Check My Github",
+    "items": [
+      {
+        "title": "PTTech ECommerce Website",
+        "description": "A full-stack eCommerce web application featuring a modern React-based front-end and a Java Spring Boot back-end. Supports dynamic product listings, user authentication, and MongoDB-based data storage."
+      },
+      {
+        "title": "Personal Portfolio",
+        "description": "A responsive and interactive personal portfolio website built with React, Vite, and TailwindCSS. Showcases my skills, projects, and resume with a clean and animated UI."
+      }
+    ]
+  },
+  "contact": {
+    "title1": "Get In",
+    "title2": "Touch",
+    "description": "Have a project in mind or want to collaborate? Feel free to reach out.",
+    "infoTitle": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "address": "Tan Binh District, HCM City, Vietnam",
+    "connect": "Connect With Me",
+    "formTitle": "Send a Message",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "Duy Phat Dao...",
+      "email": "Your Email",
+      "emailPlaceholder": "daoduyphat1810@gmail.com",
+      "message": "Your Message",
+      "messagePlaceholder": "Hello, I'd like to talk about..."
+    },
+    "send": "Send Message",
+    "sending": "Sending your message...",
+    "success": "Thank you! Your message has been sent. I’ll get back to you soon. 🙌",
+    "error": "Sorry! Something went wrong while sending your message. Please try again later. 😥"
+  },
+  "footer": {
+    "copyright": "&copy; {{year}} Dao Duy Phat. All rights reserved. Crafted with ❤️ and passion. Thank you for visiting my portfolio.",
+    "email": "daoduyphat1810@gmail.com",
+    "phone": "+84 865 577 718"
+  }
+}
