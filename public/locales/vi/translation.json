@@ -3,6 +3,7 @@
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
     "skills": "Kỹ Năng",
+    "experience": "Kinh Nghiệm",
     "projects": "Dự Án",
     "contact": "Liên Hệ"
   },
@@ -16,21 +17,41 @@
   },
   "about": {
     "title": "About <1>Me</1>",
-    "intro_heading": "Xin chào, tôi là Duy Phát — một Front-End Developer đang trong hành trình phát triển.",
-    "para_1": "Tôi là sinh viên năm cuối ngành Kỹ thuật Phần mềm tại Đại học Sư phạm Kỹ thuật TP.HCM (HCMUTE).",
-    "para_2": "Dù chưa có kinh nghiệm làm việc tại doanh nghiệp, tôi đã xây dựng nền tảng vững chắc về phát triển front-end qua các môn học và dự án cá nhân.",
-    "para_3": "Tôi yêu thích việc xây dựng giao diện sạch, phản hồi tốt và dễ tiếp cận bằng các công cụ như HTML, CSS, JavaScript, React, Tailwind CSS và Vite. Tôi luôn nỗ lực học hỏi và đam mê biến ý tưởng thành trải nghiệm tương tác.",
+    "intro_heading": "Xin chào, tôi là Duy Phát — một Front-End Developer đang không ngừng học hỏi và phát triển.",
+    "para_1": "Tôi là sinh viên ngành Kỹ thuật Phần mềm tại Đại học Sư phạm Kỹ thuật TP.HCM (HCMUTE), đam mê xây dựng giao diện web hiện đại và thân thiện với người dùng.",
+    "para_2": "Tôi tập trung phát triển kỹ năng lập trình front-end, sử dụng thành thạo HTML, CSS, JavaScript, React, Tailwind CSS và Vite để tạo ra trải nghiệm người dùng mượt mà và responsive.",
+    "para_3": "Ngoài ra, tôi cũng quan tâm đến thiết kế UI/UX và áp dụng các nguyên tắc thiết kế lấy người dùng làm trung tâm để nâng cao chất lượng sản phẩm.",
     "get_in_touch": "Liên hệ với tôi",
     "download_cv": "Tải CV",
 
     "frontend_title": "Phát triển Front-End",
-    "frontend_desc": "Thành thạo HTML, CSS, JavaScript và React. Kỹ năng xây dựng giao diện hiện đại, phản hồi tốt với Tailwind CSS và Vite.",
+    "frontend_desc": "Thành thạo HTML, CSS, JavaScript và React. Kỹ năng xây dựng giao diện hiện đại, tối ưu hiệu suất và thân thiện với người dùng bằng Tailwind CSS và Vite.",
 
     "uiux_title": "Kiến thức UI/UX",
-    "uiux_desc": "Hiểu về thiết kế lấy người dùng làm trung tâm, wireframing và bố cục giao diện. Áp dụng tư duy thiết kế để cải thiện trải nghiệm người dùng.",
+    "uiux_desc": "Hiểu biết về thiết kế tập trung vào trải nghiệm người dùng, wireframing, và bố cục giao diện. Áp dụng tư duy thiết kế để nâng cao tính khả dụng và thẩm mỹ.",
 
-    "academic_title": "Dự án học tập",
-    "academic_desc": "Thực hành qua bài tập nhóm và dự án môn học. Áp dụng phương pháp Agile và quản lý mã nguồn trong môi trường cộng tác."
+    "learning_title": "Định hướng phát triển",
+    "learning_desc": "Luôn không ngừng học hỏi và cải thiện kỹ năng để trở thành một Front-End Developer chuyên nghiệp, sẵn sàng đón nhận các thách thức trong lĩnh vực phát triển web."
+  },
+  "timeline": {
+    "items": [
+      {
+        "id": 1,
+        "type": "education",
+        "period": "2021 - 2025",
+        "title": "Sinh viên - Công nghệ thông tin",
+        "place": "Trường Đại học Sư phạm Kỹ thuật TP Hồ Chí Minh",
+        "description": "Chuyên ngành Công nghệ phần mềm, tập trung vào các kiến thức về lập trình website."
+      },
+      {
+        "id": 2,
+        "type": "experience",
+        "period": "04/2025 - 07/2025",
+        "title": "Thực tập Cloud Engineer",
+        "place": "AWS Study Group",
+        "description": "Thực tập với vai trò Cloud Engineer, tập trung học và làm việc về các dịch vụ Cloud AWS."
+      }
+    ]
   },
   "projects": {
     "title": "Featured <1>Projects</1>",

@@ -83,10 +83,10 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    {t("about.academic_title")}
+                    {t("about.learning_title")}
                   </h4>
                   <p className="text-muted-foreground">
-                    {t("about.academic_desc")}
+                    {t("about.learning_desc")}
                   </p>
                 </div>
               </div>

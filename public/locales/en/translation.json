@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -16,21 +17,41 @@
   },
   "about": {
     "title": "About <1>Me</1>",
-    "intro_heading": "Hi, I'm Duy Phat — a Front-End Developer in the making.",
-    "para_1": "I'm a final-year Software Engineering student at Ho Chi Minh City University of Technology and Education (HCMUTE), specializing in Software Engineering.",
-    "para_2": "Though I haven't yet worked in a corporate environment, I've cultivated a solid foundation in front-end development through academic coursework and personal side projects.",
-    "para_3": "I enjoy building clean, responsive, and accessible interfaces using tools like HTML, CSS, JavaScript, React, Tailwind CSS, and Vite. I'm committed to continuous learning and passionate about turning ideas into interactive experiences.",
+    "intro_heading": "Hi, I'm Duy Phat — a Front-End Developer continuously learning and growing.",
+    "para_1": "I'm a Software Engineering student at Ho Chi Minh City University of Technology and Education (HCMUTE), passionate about building modern and user-friendly web interfaces.",
+    "para_2": "I focus on developing strong front-end skills, proficient in HTML, CSS, JavaScript, React, Tailwind CSS, and Vite to create smooth, responsive user experiences.",
+    "para_3": "Additionally, I have an interest in UI/UX design principles and apply user-centered design thinking to enhance product quality.",
     "get_in_touch": "Get In Touch",
     "download_cv": "Download CV",
 
     "frontend_title": "Front-End Development",
-    "frontend_desc": "Strong grasp of HTML, CSS, JavaScript, and React. Skilled in crafting responsive, modern interfaces using tools like Tailwind CSS and Vite.",
+    "frontend_desc": "Strong grasp of HTML, CSS, JavaScript, and React. Skilled in building modern, performant, and user-friendly interfaces with Tailwind CSS and Vite.",
 
     "uiux_title": "UI/UX Fundamentals",
-    "uiux_desc": "Understanding user-centered design, wireframing, and layout structure. Applying design thinking to deliver better user experiences.",
+    "uiux_desc": "Knowledge of user-centered design, wireframing, and layout structures. Applying design thinking to improve usability and aesthetics.",
 
-    "academic_title": "Academic Projects",
-    "academic_desc": "Hands-on experience through team assignments and class projects. Practicing Agile methodologies and version control in collaborative settings."
+    "learning_title": "Development Focus",
+    "learning_desc": "Committed to continuous learning and skill improvement to become a professional Front-End Developer, ready to tackle challenges in web development."
+  },
+  "timeline": {
+    "items": [
+      {
+        "id": 1,
+        "type": "education",
+        "period": "2021 - 2025",
+        "title": "Student - Information Technology",
+        "place": "Ho Chi Minh City University of Technology and Education",
+        "description": "Major in Software Engineering, focusing on knowledge about website programming."
+      },
+      {
+        "id": 2,
+        "type": "experience",
+        "period": "04/2025 - 07/2025",
+        "title": "Cloud Engineer Intern",
+        "place": "AWS Study Group",
+        "description": "Internship as a Cloud Engineer, focusing on learning and working with AWS Cloud services."
+      }
+    ]
   },
   "projects": {
     "title": "Featured <1>Projects</1>",
