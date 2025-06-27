@@ -9,6 +9,7 @@ export const TimelineSection = () => {
     <section
       id="experience"
       className="py-24 px-4 bg-background min-h-screen transition-colors duration-300"
+      data-aos="fade-right"
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-4xl font-extrabold mb-20 text-center text-foreground">
